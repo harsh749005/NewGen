@@ -9,7 +9,7 @@ const Policies = () => {
       <div className="h-100vh  w-full flex flex-col gap-5 mb-10">
         <div className="mt-5"></div>
         <div className=" pt-10 relative">
-          <div className="w-[90%] h-[400px] m-auto relative z-50">
+          <div className="w-[90%] h-[400px] m-auto relative z-20">
             <img
               className="object-cover h-full w-full rounded"
               src="https://plus.unsplash.com/premium_photo-1661497281000-b5ecb39a2114?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

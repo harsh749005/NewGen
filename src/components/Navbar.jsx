@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from "../assets/newgen.jpeg";
 import { Link } from "react-router-dom";
 import { FiPhoneCall } from "react-icons/fi";
+import PolicyMenu from './PolicyMenu';
 const Navbar = () => {
   return (
     <>
@@ -23,9 +24,8 @@ const Navbar = () => {
             <Link to="/contact" className='font-["Kanit",serif] text-xl font-light hover:text-blue-600'>
               Contact
             </Link>
-            <Link to="/policies" className='font-["Kanit",serif] text-xl font-light hover:text-blue-600'>
-              Policies
-            </Link>
+         
+            <PolicyMenu/>
           </div>
           <div>
             <button className='w-max px-5 py-2 flex items-center justify-center gap-2 border-2 border-gray-300 rounded-full font-["Kanit",serif] text-xl font-light'>
