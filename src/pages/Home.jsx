@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/newgen.jpeg";
 import { useEffect } from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 function Home() {
   const count = useMotionValue(0);
   const rounded = useTransform(count, Math.round);
@@ -244,6 +245,7 @@ function Home() {
       </div>
 
       {/* Footer */}
+      <Footer/>
     </div>
   );
 }
