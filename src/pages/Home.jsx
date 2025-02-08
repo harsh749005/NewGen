@@ -154,22 +154,22 @@ function Home() {
                   dedicated to providing quality holistic education for all
                   regardless of race, creed or financial standing.
                 </p>
-                <div className="flex items-center text-blue-600 cursor-pointer">
+                <Link to='/events' className="flex items-center text-blue-600 cursor-pointer">
                   Learn more
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </div>
+                </Link>
               </div>
             </div>
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <img
-                src={`https://www.ficta.co.uk/assets/img/GW2.1.png`}
+                src='https://libeskind.com/wp-content/uploads/elevation-from-northeast-c-bitterbredt-2280x1485.jpg'
                 alt="Event"
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  FICTA 2025:
+                  Under FICTA 2025:
                 </h3>
                 <p className="text-gray-600 mb-4 line-clamp-2">
                   After the grand success of past twelve editions of FICTA
@@ -178,10 +178,10 @@ function Home() {
                   Edition of International Conference on Frontiers of
                   Intelligent Computing: Theory and Applications, FICTA-2025{" "}
                 </p>
-                <div className="flex items-center text-blue-600 cursor-pointer">
+                <Link to='/events' className="flex items-center text-blue-600 cursor-pointer">
                   Learn more
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </div>
+                </Link>
               </div>
             </div>
           </div>
