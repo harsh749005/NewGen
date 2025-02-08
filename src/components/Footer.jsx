@@ -18,35 +18,71 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="w-max">
-              <h3 className="text-white font-semibold mb-4">Quick Links</h3>
-              <ul className="flex items-center justify-center gap-10">
-              <li>
-                  <Link to="/"  className="hover:text-white ">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/about"  className="hover:text-white ">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/termsConditions"  className="hover:text-white">
-                    Policies
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/events"  className="hover:text-white">
-                    Events
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/contact"  className="hover:text-white">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
+            <div className="flex items-center  w-96 justify-between">
+              <div className="w-max">
+                <h3 className="text-xl text-white font-semibold mb-4">
+                  Quick Links
+                </h3>
+                <ul className="flex flex-col items-center justify-center gap-2">
+                  <li>
+                    <Link to="/" className="hover:text-white ">
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/about" className="hover:text-white ">
+                      About Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/termsConditions" className="hover:text-white">
+                      Policies
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/events" className="hover:text-white">
+                      Events
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/contact" className="hover:text-white">
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="w-max ">
+                <h3 className="text-xl text-white font-semibold mb-4 w-max m-auto">
+                  Policies
+                </h3>
+                <ul className="flex flex-col items-center justify-center gap-2">
+                  <li>
+                    <Link to="/refundPolicy" className="hover:text-white ">
+                      Refund Policy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/termsConditions" className="hover:text-white ">
+                      Terms & Conditions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/paymentPolicy" className="hover:text-white">
+                      Payment Policy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/privacyPolicy" className="hover:text-white">
+                      Privicy Policy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/publicationPolicy" className="hover:text-white">
+                      Publication Policy
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
