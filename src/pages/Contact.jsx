@@ -6,6 +6,8 @@ const Contact = () => {
   return (
     <>
       <Navbar />
+      <hr className="w-[90%] m-auto mt-2 text-gray-400" />
+
       <div className="w-[90%] m-auto flex  mt-20 mb-20">
         <div className="w-[600px] h-[700px]">
           <img

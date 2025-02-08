@@ -5,6 +5,8 @@ const Termsconditions = () => {
   return (
     <>
       <Navbar />
+      <hr className="w-[90%] m-auto mt-2 text-gray-400" />
+
       <div className="h-100vh  w-full flex flex-col gap-5 mb-10">
         <div className="mt-5"></div>
         <div className=" pt-10 relative">
