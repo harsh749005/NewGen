@@ -30,7 +30,7 @@ function Home() {
       {/* Navigation */}
       <Navbar />
       <hr className="w-[90%] m-auto mt-2 text-gray-400" />
-{/* Main Heading */}
+      {/* Main Heading */}
       <div className="w-[90%] m-auto mt-20">
         <h1 className="text-xl font-medium text-[#2c58F4] flex items-center gap-2">
           <div className="w-8 h-[2px] bg-[#2c58f4]"></div>NEWGEN: IT Service
@@ -44,7 +44,7 @@ function Home() {
           and <span className="font-medium">Startups.</span>
         </p>
       </div>
-{/* Hero Section */}
+      {/* Hero Section */}
       <div className="w-full h-max  pt-32 relative mt-20">
         <div className="w-[90%] h-[600px] absolute top-0 left-[50%] translate-x-[-50%]">
           <img
@@ -53,7 +53,7 @@ function Home() {
             className="w-full h-full object-cover rounded"
           />
         </div>
-          {/* Stats Section */}
+        {/* Stats Section */}
         <div className="w-full h-[110vh] bg-blue-600">
           <div className="bg-white py-16 w-[70%] absolute bottom-5 rounded left-[50%] translate-x-[-50%]">
             <div className="w-max m-auto px-4 sm:px-6 lg:px-8 ">
@@ -85,9 +85,6 @@ function Home() {
           </div>
         </div>
       </div>
-
-
-    
 
       {/* About Section */}
       <div className="w-[90%] m-auto flex  mt-20">
@@ -247,7 +244,6 @@ function Home() {
       </div>
 
       {/* Footer */}
-
     </div>
   );
 }
