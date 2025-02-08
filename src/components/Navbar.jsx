@@ -32,7 +32,7 @@ const Navbar = () => {
             <FiPhoneCall />
             <p className="font-medium">
 
-              Call : 9054140350
+              Call : +91-8090008902
             </p>
             </button>
           </div>
