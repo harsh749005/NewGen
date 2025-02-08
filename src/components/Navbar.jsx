@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from "../assets/newgen.jpeg";
+import Logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { FiPhoneCall } from "react-icons/fi";
 import PolicyMenu from './PolicyMenu';
