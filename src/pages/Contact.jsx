@@ -7,15 +7,15 @@ const Contact = () => {
     <>
       <hr className="w-[90%] m-auto mt-2 text-gray-400" />
 
-      <div className="w-[90%] m-auto md:flex mt-20 mb-20">
-        <div className="w-full md:w-[600px] md:h-[700px]">
+      <div className="w-[90%] m-auto xl:flex mt-20 mb-20">
+        <div className="w-full xl:w-[600px] xl:h-[700px]">
           <img
             className="h-full w-full object-cover"
             src="https://plus.unsplash.com/premium_photo-1665203604603-e097954797e9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="image"
           />
         </div>
-        <div className=" md:w-[800px] flex flex-col gap-10 md:px-20 pt-10">
+        <div className=" xl:w-[800px] flex flex-col gap-10 xl:px-20 pt-10">
           <h1 className="text-xl font-['Kanit',serif] text-[#2c58F4] flex items-center gap-2">
             <div className="w-8 h-[2px] bg-[#2c58f4]"></div>Contact Us
           </h1>
