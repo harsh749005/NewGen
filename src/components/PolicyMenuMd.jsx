@@ -10,9 +10,9 @@ const PolicyMenuMd = () => {
         <Link to="/privacyPolicy" className="text-[12px] cursor-pointer font-['Kanit',serif] font-light text-white hover:text-blue-500 ">
         Privacy Policy
         </Link>
-        <a to="/publicationPolicy" className="text-[12px] cursor-pointer font-['Kanit',serif] font-light text-white hover:text-blue-500 ">
+        <Link to="/publicationPolicy" className="text-[12px] cursor-pointer font-['Kanit',serif] font-light text-white hover:text-blue-500 ">
         Publication Policy
-        </a>
+        </Link>
         <Link to="/refundPolicy" className="text-[12px] cursor-pointer font-['Kanit',serif] font-light text-white hover:text-blue-500 ">
          Refund Policy
         </Link>
