@@ -20,7 +20,7 @@ const Events = () => {
           <h1 className="text-xl font-['Kanit',serif] text-[#2c58F4] flex items-center gap-2">
             <div className="w-8 h-[2px] bg-[#2c58f4]"></div>Under SCI 2025:
           </h1>
-          <div className="w-full text-lg font-['Kanit',serif] font-light text-[#31315B] flex flex-col gap-5">
+          <div className="w-full md:text-xl font-['Kanit',serif] font-light text-[#31315B] flex flex-col gap-5">
             <p>
               The 7th International Conference on Smart Computing and
               Informatics (SCI-2025) will be organized by Sunway University
@@ -77,7 +77,7 @@ const Events = () => {
           <h1 className="text-xl font-['Kanit',serif] text-[#2c58F4] flex items-center gap-2">
             <div className="w-8 h-[2px] bg-[#2c58f4]"></div>Under FICTA 2025:
           </h1>
-          <div className="text-xl font-['Kanit',serif] font-light text-[#31315B] flex flex-col gap-5">
+          <div className="md:text-xl font-['Kanit',serif] font-light text-[#31315B] flex flex-col gap-5">
             <p>
               After the grand success of past twelve editions of FICTA
               Conference with Springer Nature as publication partner, it is a
