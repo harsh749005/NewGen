@@ -12,7 +12,7 @@ const PolicyMenu =()=> {
     >
       {/* Navbar Item */}
       <div className="flex items-center justify-center gap-2">
-         <span className='font-["Kanit",serif] text-xl font-light hover:text-blue-600 cursor-pointer select-none'>Policy</span>
+         <span className='font-["Kanit",serif] xl:text-xl font-light hover:text-blue-600 cursor-pointer select-none'>Policy</span>
         <FaAngleDown className={`rotate-${isOpen ? 180 : 0}`}/>
       </div>
 
