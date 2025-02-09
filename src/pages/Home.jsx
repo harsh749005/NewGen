@@ -132,7 +132,7 @@ function Home() {
       <h1 className="md:hidden flex text-xl font-['Kanit',serif] text-[#2c58F4]  items-center gap-2 ">
             <div className="w-8 h-[2px] bg-[#2c58f4]"></div>About Us
           </h1>
-        <div className="w-full h-[600px]">
+        <div className="w-full h-[600px] md:w-[600px] md:h-[800px]">
           <img
             className="h-full w-full object-cover"
             src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
