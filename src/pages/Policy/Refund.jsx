@@ -1,13 +1,14 @@
 import React from 'react'
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import PolicyMenuMd from '../../components/PolicyMenuMd';
 
 const Refund = () => {
   return (
     <>
  
     <hr className="w-[90%] m-auto mt-2 text-gray-400" />
-
+<PolicyMenuMd/>
     <div className="h-100vh  w-full flex flex-col gap-5 mb-10">
       <div className="mt-5"></div>
       <div className=" pt-10 relative">
