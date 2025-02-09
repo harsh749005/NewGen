@@ -65,7 +65,7 @@ function Home() {
                     <motion.div className="text-2xl lg:text-4xl font-bold text-gray-900 mb-2">
                       {rounded}
                     </motion.div>
-                    <p className="font-medium text-2xl lg:text-4xl lg:text-4xl mb-2">+</p>
+                    <p className="font-medium text-2xl lg:text-4xl mb-2">+</p>
                   </div>
                   <p className="text-gray-600">International Conferences</p>
                 </div>
