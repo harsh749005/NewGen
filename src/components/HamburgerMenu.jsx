@@ -22,13 +22,13 @@ const HamburgerMenu = ({closeMenu}) => {
   return (
     <div style={{
       top: `${scrollPosition + 320}px`, // Adjust positioning based on scroll position
-    }} className='z-[11111] absolute sm:left-6 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] md:left-[25rem] md:w-96 bg-white  w-72  p-5 lg:hidden h-max  items-center flex flex-col gap-5  rounded-lg border-2 border-blue-600 '>
+    }} className='z-[11111] absolute sm:left-6 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] md:left-[25rem] md:w-96 lg:hidden bg-white  w-72  p-5  h-max  items-center flex flex-col gap-5  rounded-lg border-2 border-blue-600 '>
     <div className=' w-full flex justify-end pr-5 p-2 mt-2'>
     <IoCloseOutline onClick={closeMenu} className='text-2xl' />
         <img  src="" alt="" className='cursor-pointer'/>
     </div>
       <ul className="w-full flex flex-col gap-5 justify-between items-center lg:text-xl font-medium ">
-            <li   className='hamburgerMenuLi rounded  w-full p-2 text-center hover:bg-gray-800  cursor-pointer'>
+            <li   className='hamburgerMenuLi rounded  w-full p-2 text-center hover:bg-blue-500 cursor-pointer'>
               <Link
                 onClick={closeMenu}              
                 to="/"
@@ -37,17 +37,17 @@ const HamburgerMenu = ({closeMenu}) => {
                 Home
               </Link>
             </li>
-            <li  className='w-full hamburgerMenuLi rounded p-2 text-center hover:bg-gray-800  cursor-pointer'>
+            <li  className='w-full hamburgerMenuLi rounded p-2 text-center hover:bg-blue-500  cursor-pointer'>
               <Link
                 onClick={closeMenu}                
                 to="/events"
-                 className="hamburgerMenua cursor-pointer text-black hover:text-blue-400"
+                 className="hamburgerMenua cursor-pointer text-black "
               >
                 Events
               </Link>
             </li>
           
-            <li  className='hamburgerMenuLi rounded  w-full  p-2 text-center hover:bg-gray-800  cursor-pointer'>
+            <li  className='hamburgerMenuLi rounded  w-full  p-2 text-center hover:bg-blue-500 cursor-pointer'>
               <Link
                 onClick={closeMenu}
                 to="/about"
@@ -56,7 +56,7 @@ const HamburgerMenu = ({closeMenu}) => {
                 About
               </Link>
             </li>
-            <li  className='hamburgerMenuLi rounded  w-full  p-2 text-center hover:bg-gray-800  cursor-pointer'>
+            <li  className='hamburgerMenuLi rounded  w-full  p-2 text-center hover:bg-blue-500 cursor-pointer'>
               <Link
                 onClick={closeMenu}
                 to="/contact"
@@ -65,7 +65,7 @@ const HamburgerMenu = ({closeMenu}) => {
                 Contact
               </Link>
             </li>
-            <li  className='hamburgerMenuLi rounded  w-full  p-2 text-center hover:bg-gray-800  cursor-pointer'>
+            <li  className='hamburgerMenuLi rounded  w-full  p-2 text-center hover:bg-blue-500 cursor-pointer'>
               <Link
                 onClick={closeMenu}
                 to="/termsConditions"
