@@ -26,7 +26,7 @@ const Refund = () => {
       </div>
       <div className="mt-10 w-[90%] m-auto">
         <h1 className='font-medium text-4xl '>Refund Policy</h1>
-        <p className="mt-10">
+        <p className="mt-10 px-2">
           <ul className=" list-decimal font-['Kanit',serif] text-lg font-light flex flex-col gap-2">
             <li>
               In case of any additional or error payments made by the

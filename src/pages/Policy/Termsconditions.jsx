@@ -25,7 +25,7 @@ const Termsconditions = () => {
         </div>
         <div className="mt-10 w-[90%] m-auto">
           <h1 className="font-medium text-4xl ">Terms & Conditions</h1>
-          <p className="mt-10 flex flex-col gap-5">
+          <p className="mt-10 flex flex-col gap-5 px-2">
             <p className=" list-decimal font-['Kanit',serif] text-xl font-light ">
               The Terms & Conditions between NewGen Research Consultancy and any
               of the entities completing a booking request during joining to any

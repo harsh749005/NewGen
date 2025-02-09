@@ -28,7 +28,7 @@ const PaymentPolicy = () => {
             ONLINE REGISTRATION AND PAYMENT POLICY
           </h1>
           <div className="mt-10 flex flex-col gap-5">
-            <div className="">
+            <div className="px-2">
               <p className="font-medium text-xl">
                 Instructions for Author(s) Registration & Payment of
                 Registration Fee

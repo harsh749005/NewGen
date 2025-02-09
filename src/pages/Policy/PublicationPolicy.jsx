@@ -25,7 +25,7 @@ const PublicationPolicy = () => {
         </div>
         <div className="mt-10 w-[90%] m-auto">
           <h1 className="font-medium text-4xl ">Publication Policy</h1>
-          <div className="mt-10 flex flex-col gap-5">
+          <div className="mt-10 flex flex-col gap-5 px-2">
             <p className="font-['Kanit',serif] text-lg font-light">
               Publication of papers is solely dependent upon the author’s
               response to queries and proofreading during the production stage.

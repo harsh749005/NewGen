@@ -52,7 +52,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="w-max ">
-                <h3 className="text-xl text-white font-semibold mb-4">
+                <h3 className="text-xl text-white font-semibold mb-4 md:text-center">
                   Policies
                 </h3>
                 <ul className="flex flex-col md:flex md:flex-col md:items-center md:justify-center gap-2">

@@ -25,7 +25,7 @@ const PrivacyToPolicy = () => {
         </div>
         <div className="mt-10 w-[90%] m-auto">
           <h1 className="font-medium text-4xl ">Privacy Policy</h1>
-          <div className="mt-10">
+          <div className="mt-10 px-2">
             <p className="font-['Kanit',serif] text-lg font-light">
               This policy document highlights our privacy practices regarding
               personal information that we collect and store about you through
