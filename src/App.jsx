@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
@@ -11,12 +11,19 @@ import Termsconditions from "./pages/Policy/Termsconditions";
 import PaymentPolicy from "./pages/Policy/PaymentPolicy";
 import PrivacyToPolicy from "./pages/Policy/PrivacyToPolicy";
 import PublicationPolicy from "./pages/Policy/PublicationPolicy";
+import Navbar from "./components/Navbar";
+import HamburgerMenu from "./components/HamburgerMenu";
 function App() {
-
+  const [isMenuOpen,setMenuOpen] = useState(false);
+  const [isAuth,setisAuth] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
 
   return (
     <>
-      
+      <Navbar toggleMenu={toggleMenu}/>
+      {isMenuOpen && <HamburgerMenu closeMenu={toggleMenu} />}
       <Routes>
         <Route path="/" element={<Home/>}/>
         {/* Add more routes here */}
