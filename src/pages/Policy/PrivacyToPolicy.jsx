@@ -33,7 +33,7 @@ const PrivacyToPolicy = () => {
               provide us while participating in our conferences/events and
               campaigns.
             </p>
-            <ul className=" list-disc font-['Kanit',serif] text-lg font-light flex flex-col gap-2 mt-2">
+            <ul className=" list-disc font-['Kanit',serif] text-md font-light flex flex-col gap-2 mt-2">
               <li>
                 We process your personal information when it is necessary for
                 the purposes of a legitimate interest pursued by us or a third

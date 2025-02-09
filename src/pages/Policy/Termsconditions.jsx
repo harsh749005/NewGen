@@ -26,7 +26,7 @@ const Termsconditions = () => {
         <div className="mt-10 w-[90%] m-auto">
           <h1 className="font-medium text-4xl ">Terms & Conditions</h1>
           <p className="mt-10 flex flex-col gap-5 px-2">
-            <p className=" list-decimal font-['Kanit',serif] text-xl font-light ">
+            <p className=" list-decimal font-['Kanit',serif] text-lg font-light ">
               The Terms & Conditions between NewGen Research Consultancy and any
               of the entities completing a booking request during joining to any
               of our international conferences. The following Terms & Conditions
@@ -35,7 +35,7 @@ const Termsconditions = () => {
               Acknowledging the Terms & Conditions signifies the acceptance of
               all the Terms & Conditions mentioned underneath :
             </p>
-            <ul className=" list-decimal font-['Kanit',serif] text-lg font-light flex flex-col gap-2">
+            <ul className=" list-decimal font-['Kanit',serif] text-md font-light flex flex-col gap-2">
               <li>
                 The international event or conference is organized and managed
                 by the firm NewGen Research Consultancy. References to “us”
@@ -113,7 +113,7 @@ const Termsconditions = () => {
                 By attending the event you acknowledge and agree to the filming
                 and photography policies laid down by us. The policies framed
                 are as follows:
-                <ul className=" list-disc font-['Kanit',serif] text-lg font-light flex flex-col gap-2 mt-1">
+                <ul className=" list-disc font-['Kanit',serif] text-md font-light flex flex-col gap-2 mt-1">
                   <li>
                     We may use the photographs, videos and audio recordings in
                     any event related activities, promotions, advertisement and

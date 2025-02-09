@@ -26,19 +26,19 @@ const PublicationPolicy = () => {
         <div className="mt-10 w-[90%] m-auto">
           <h1 className="font-medium text-4xl ">Publication Policy</h1>
           <div className="mt-10 flex flex-col gap-5 px-2">
-            <p className="font-['Kanit',serif] text-lg font-light">
+            <p className="font-['Kanit',serif] text-md font-light">
               Publication of papers is solely dependent upon the author’s
               response to queries and proofreading during the production stage.
               Publishers or Conference Organizers can decline to publish the
               conference paper that does not meet their quality standards.
             </p>
-            <p className="font-['Kanit',serif] text-lg font-light">
+            <p className="font-['Kanit',serif] text-md font-light">
               We do not claim or guarantee that any papers will be indexed in
               any database. Indexing services evaluate conference papers and
               independently determine what they will index. The procedures for
               the same are dynamic and are liable to change from time-to-time.
             </p>
-            <p className="font-['Kanit',serif] text-lg font-light">
+            <p className="font-['Kanit',serif] text-md font-light">
               The publication time for the papers received is not fixed. It may
               take up to 6-9 months from the date of completion of the
               conference or even more for further processing. The same can also

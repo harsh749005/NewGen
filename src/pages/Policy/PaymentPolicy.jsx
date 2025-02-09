@@ -33,7 +33,7 @@ const PaymentPolicy = () => {
                 Instructions for Author(s) Registration & Payment of
                 Registration Fee
               </p>
-              <ul className=" list-decimal font-['Kanit',serif] text-lg font-light flex flex-col gap-2 mt-2">
+              <ul className=" list-decimal font-['Kanit',serif] text-md font-light flex flex-col gap-2 mt-2">
                 <li>
                   Each paper must be at least registered by one author for
                   presentation in the conference getting it published in
@@ -74,7 +74,7 @@ const PaymentPolicy = () => {
               <h1 className="font-medium text-4xl">
                 Registration Fee (Physical Mode):
               </h1>
-              <p className=" list-decimal font-['Kanit',serif] text-lg font-light mt-5">
+              <p className=" list-decimal font-['Kanit',serif] text-md font-light mt-5">
                 This fee includes access to Inaugural Session, Keynotes/Invited
                 Lectures, Oral Paper Presentation Sessions, Networking,
                 Conference Lunch and Refreshment, Conference Kit,
@@ -87,13 +87,13 @@ const PaymentPolicy = () => {
               <h1 className="font-medium text-4xl">
                 Registration Fee (Online Mode):
               </h1>
-              <p className=" list-decimal font-['Kanit',serif] text-lg font-light mt-5">
+              <p className=" list-decimal font-['Kanit',serif] text-md font-light mt-5">
                 This fee includes access to Inaugural Session, Keynotes/Invited
                 Lectures, Oral Paper Presentation Sessions in online mode,
                 Participation/Presentation Certificate (through e-mail after the
                 completion of conference).{" "}
               </p>
-              <p className=" list-decimal font-['Kanit',serif] text-lg font-light mt-5">
+              <p className=" list-decimal font-['Kanit',serif] text-md font-light mt-5">
                 Registration must be paid and confirmed before the deadline. We
                 may revise our terms and conditions as per the government norms,
                 for example to reflect changes in relevant laws or regulatory
