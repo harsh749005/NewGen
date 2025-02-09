@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const PolicyMenuMd = () => {
   return (
-    <div className='flex items-center justify-center gap-5 mt-10 md:hodden bg-blue-500 py-10'>
+    <div className='flex items-center justify-center gap-5 mt-10 lg:hidden bg-blue-500 py-10'>
         <Link to="/paymentPolicy" className="text-[12px] cursor-pointer font-['Kanit',serif] font-light text-white hover:text-blue-500 ">
         Payment Policy
         </Link>
