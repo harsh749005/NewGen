@@ -56,7 +56,7 @@ function Home() {
         </div>
         {/* Stats Section */}
         <div className="w-full h-[180vh] md:h-[110vh] bg-blue-600">
-          <div className="bg-white py-16 w-[70%] absolute bottom-8 md:bottom-5 rounded left-[50%] translate-x-[-50%]">
+          <div className="bg-white py-16 w-[70%] absolute bottom-20 md:bottom-5 rounded left-[50%] translate-x-[-50%]">
             <div className="w-max m-auto px-4 sm:px-6 lg:px-8 ">
               <div className="flex flex-col gap-5 md:flex md:flex-row md:gap-36 ">
                 <div className="text-center">
