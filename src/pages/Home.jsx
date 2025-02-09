@@ -143,7 +143,7 @@ function Home() {
           <h1 className="hidden md:flex text-xl font-['Kanit',serif] text-[#2c58F4] items-center gap-2">
             <div className="w-8 h-[2px] bg-[#2c58f4]"></div>About Us
           </h1>
-          <div className="w-72 md:w-full text-xl lg:text-4xl font-['Kanit',serif] font-light text-[#31315B]">
+          <div className="w-72 md:w-full text-2xl lg:text-4xl font-['Kanit',serif] font-light text-[#31315B]">
             Comprehensive <span className="font-medium">support</span> to
             startups and innovation{" "}
             <span className="font-medium">consulting</span>, and{" "}
