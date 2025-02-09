@@ -8,19 +8,19 @@ const Events = () => {
      
       <hr className="w-[90%] m-auto mt-2 text-gray-400" />
 
-      <div className="w-[90%] m-auto md:flex md:flex-row flex flex-col mt-20 mb-20 gap-5">
-        <div className="w-full h-[600px] md:w-[600px] md:h-[800px]">
+      <div className="w-[90%] m-auto xl:flex xl:flex-row flex flex-col mt-20 mb-20 gap-5">
+        <div className="w-full h-[600px] xl:w-[1800px] ">
           <img
             className="h-full w-full object-cover"
             src="https://images.unsplash.com/photo-1634482899780-6ac6b92c656e?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="image"
           />
         </div>
-        <div className=" md:w-[800px] flex flex-col gap-10 md:px-20 pt-10">
+        <div className=" flex flex-col gap-10 lg:px-20 pt-10">
           <h1 className="text-xl font-['Kanit',serif] text-[#2c58F4] flex items-center gap-2">
             <div className="w-8 h-[2px] bg-[#2c58f4]"></div>Under SCI 2025:
           </h1>
-          <div className="w-full md:text-xl font-['Kanit',serif] font-light text-[#31315B] flex flex-col gap-5">
+          <div className=" lg:text-xl font-['Kanit',serif] font-light text-[#31315B] flex flex-col gap-5">
             <p>
               The 7th International Conference on Smart Computing and
               Informatics (SCI-2025) will be organized by Sunway University
@@ -69,15 +69,16 @@ const Events = () => {
           </div>
         </div>
       </div>
-      <div className="w-[90%] m-auto md:flex md:flex-row flex flex-col mt-20 mb-20 gap-5">
+      <div className="w-[90%] m-auto xl:flex xl:flex-row flex flex-col mt-20 mb-20 gap-20">
         {/* <div className="md:w-[800px] bg-amber-300"> */}
 
         
-        <div className="w-full  flex flex-col gap-10 md:px-20 pt-10">
+        <div className="w-full  flex flex-col gap-10 pt-10">
           <h1 className="text-xl font-['Kanit',serif] text-[#2c58F4] flex items-center gap-2">
             <div className="w-8 h-[2px] bg-[#2c58f4]"></div>Under FICTA 2025:
           </h1>
-          <div className="md:text-xl font-['Kanit',serif] font-light text-[#31315B] flex flex-col gap-5">
+         
+          <div className=" lg:text-xl font-['Kanit',serif] font-light text-[#31315B] flex flex-col gap-5">
             <p>
               After the grand success of past twelve editions of FICTA
               Conference with Springer Nature as publication partner, it is a
@@ -133,8 +134,9 @@ const Events = () => {
               </a>
             </p>
           </div>
+          
         </div>
-        <div className="w-full h-[600px] md:w-[600px] md:h-[800px]">
+        <div className="w-full h-[600px]  xl:h-[800px]">
           <img
             className="h-full w-full object-cover"
             src="https://libeskind.com/wp-content/uploads/elevation-from-northeast-c-bitterbredt-2280x1485.jpg"
