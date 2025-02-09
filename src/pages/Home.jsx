@@ -86,6 +86,46 @@ function Home() {
           </div>
         </div>
       </div>
+      {/* Brief Info */}
+      <div className="w-[90%] m-auto flex  mt-20">
+        <div className=" w-[800px] flex flex-col gap-10 px-20 pt-10">
+          <h1 className="text-xl font-['Kanit',serif] text-[#2c58F4] flex items-center gap-2">
+            <div className="w-8 h-[2px] bg-[#2c58f4]"></div>Our Misson
+          </h1>
+          <div className="text-4xl font-['Kanit',serif] font-light text-[#31315B]">
+            <span className="font-medium">Newgen Research Consultancy</span>{" "}
+            empowers research and startups through mentorship, conferences, and
+            strategic support.
+          </div>
+          <div className="flex gap-10 justify-center flex-col">
+            <div className="text-[20px] font-['Kanit',serif] font-light">
+              <span className="font-medium">Newgen Research Consultancy</span> (Empowering Research, Innovation, and
+              Startups) Newgen Research Consultancy is a dynamic IT consultancy
+              firm committed to fostering research excellence, academic
+              collaboration, and startup growth. We specialize in organizing
+              international conferences, skill development workshops, and
+              mentorship programs at universities and institutions, providing
+              researchers and students with the platform to contribute to
+              intellectual capital. Beyond academia, we actively support young
+              startups, offering strategic guidance, funding, and handholding to
+              help them build a strong foundation. With a network of like-minded
+              professionals, we are dedicated to nurturing talent, fostering
+              innovation, and creating societal impact. 
+              <p className="font-medium">
+              Join us in shaping the
+              future of research and entrepreneurship!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="w-[600px] h-[700px]">
+          <img
+            className="h-full w-full object-cover"
+            src="https://plus.unsplash.com/premium_photo-1664299493948-1103ac2c651d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+          />
+        </div>
+      </div>
 
       {/* About Section */}
       <div className="w-[90%] m-auto flex  mt-20">
@@ -155,7 +195,10 @@ function Home() {
                   dedicated to providing quality holistic education for all
                   regardless of race, creed or financial standing.
                 </p>
-                <Link to='/events' className="flex items-center text-blue-600 cursor-pointer">
+                <Link
+                  to="/events"
+                  className="flex items-center text-blue-600 cursor-pointer"
+                >
                   Learn more
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -164,7 +207,7 @@ function Home() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <img
-                src='https://libeskind.com/wp-content/uploads/elevation-from-northeast-c-bitterbredt-2280x1485.jpg'
+                src="https://libeskind.com/wp-content/uploads/elevation-from-northeast-c-bitterbredt-2280x1485.jpg"
                 alt="Event"
                 className="w-full h-48 object-cover"
               />
@@ -179,7 +222,10 @@ function Home() {
                   Edition of International Conference on Frontiers of
                   Intelligent Computing: Theory and Applications, FICTA-2025{" "}
                 </p>
-                <Link to='/events' className="flex items-center text-blue-600 cursor-pointer">
+                <Link
+                  to="/events"
+                  className="flex items-center text-blue-600 cursor-pointer"
+                >
                   Learn more
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -245,7 +291,7 @@ function Home() {
       </div>
 
       {/* Footer */}
-      <Footer/>
+      <Footer />
     </div>
   );
 }
