@@ -56,8 +56,8 @@ function Home() {
         </div>
         {/* Stats Section */}
         <div className="w-full h-[180vh] md:h-[110vh] bg-blue-600">
-          <div className="bg-white py-16 w-[70%] absolute bottom-20 md:bottom-5 rounded left-[50%] translate-x-[-50%]">
-            <div className="w-max m-auto px-4 sm:px-6 lg:px-8 ">
+          <div className="bg-white lg:py-16 py-10 xl:w-[70%] absolute bottom-20 md:bottom-5 rounded left-[50%] translate-x-[-50%]">
+            <div className="lg:w-max m-auto px-4 sm:px-6 lg:px-8 ">
               <div className="flex flex-col gap-5 md:flex md:flex-row md:gap-36 ">
                 <div className="text-center">
                   <Globe2 className="h-10 w-10 text-blue-600 mx-auto mb-4" />
@@ -87,18 +87,28 @@ function Home() {
         </div>
       </div>
       {/* Brief Info */}
-      <div className="w-[90%] m-auto flex  mt-20">
-        <div className="w-[800px] flex flex-col gap-10 md:px-20 pt-10">
+      <div className="w-[90%] m-auto xl:gap-0 flex flex-col gap-15  mt-20">
+        <div className=" flex flex-col xl:flex xl:flex-row  gap-10 xl:px-20 pt-10">
+          
+          <div className="xl:w-full h-[700px] hidden md:block">
+          <img
+            className="h-full w-full object-cover"
+            src="https://plus.unsplash.com/premium_photo-1664299493948-1103ac2c651d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="image"
+          />
+        </div>
+          <div className="xl:w-[800px] xl:flex xl:flex-col xl:gap-10 flex flex-col gap-10 text-2xl lg:text-4xl font-['Kanit',serif] font-light text-[#31315B]">
           <h1 className="text-xl font-['Kanit',serif] text-[#2c58F4] flex items-center gap-2">
             <div className="w-8 h-[2px] bg-[#2c58f4]"></div>Our Misson
           </h1>
-          <div className="text-2xl lg:text-4xl font-['Kanit',serif] font-light text-[#31315B]">
+            <p>
+
             <span className="font-medium">Newgen Research Consultancy</span>{" "}
             empowers research and startups through mentorship, conferences, and
             strategic support.
-          </div>
+            </p>
           <div className="flex gap-10 justify-center flex-col">
-            <div className="text-[20px] font-['Kanit',serif] font-light">
+            <div className="text-[16px] md:text-[20px] font-['Kanit',serif] font-light">
               <span className="font-medium">Newgen Research Consultancy</span> (Empowering Research, Innovation, and
               Startups) Newgen Research Consultancy is a dynamic IT consultancy
               firm committed to fostering research excellence, academic
@@ -117,54 +127,49 @@ function Home() {
               </p>
             </div>
           </div>
+          </div>
         </div>
-        <div className="w-[600px] h-[700px] hidden md:block">
-          <img
-            className="h-full w-full object-cover"
-            src="https://plus.unsplash.com/premium_photo-1664299493948-1103ac2c651d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="image"
-          />
-        </div>
+      
       </div>
 
       {/* About Section */}
-      <div className="w-[90%] m-auto md:flex md:flex-row flex flex-col   mt-20 gap-5">
+      <div className="w-[90%] m-auto xl:flex xl:flex-row flex flex-col   mt-20 gap-5">
       <h1 className="md:hidden flex text-xl font-['Kanit',serif] text-[#2c58F4]  items-center gap-2 ">
             <div className="w-8 h-[2px] bg-[#2c58f4]"></div>About Us
           </h1>
-        <div className="w-full h-[600px] md:w-[600px] md:h-[800px]">
+        <div className="w-full h-[600px] xl:w-[600px] xl:h-[800px]">
           <img
             className="h-full w-full object-cover"
             src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="image"
           />
         </div>
-        <div className=" md:w-[800px] flex flex-col gap-10 md:px-20 pt-10">
+        <div className="xl:w-[800px] flex flex-col gap-10 xl:px-20 pt-10">
           <h1 className="hidden md:flex text-xl font-['Kanit',serif] text-[#2c58F4] items-center gap-2">
             <div className="w-8 h-[2px] bg-[#2c58f4]"></div>About Us
           </h1>
-          <div className="w-72 md:w-full text-2xl lg:text-4xl font-['Kanit',serif] font-light text-[#31315B]">
+          <div className=" xl:w-full text-2xl lg:text-4xl font-['Kanit',serif] font-light text-[#31315B]">
             Comprehensive <span className="font-medium">support</span> to
             startups and innovation{" "}
             <span className="font-medium">consulting</span>, and{" "}
             <span className="font-medium">strategic</span> guidance.
           </div>
-          <div className="w-72 md:w-full flex gap-10 justify-center flex-col">
-            <div className="text-[20px] font-['Kanit',serif] font-light">
+          <div className=" xl:w-full flex gap-10 justify-center flex-col">
+            <div className="md:text-[20px] font-['Kanit',serif] font-light">
               To foster innovation and growth in the technology sector by
               providing expert guidance, facilitating valuable connections, and
               supporting the development of groundbreaking solutions.
             </div>
             <ul className="space-y-4">
-              <li className="flex items-center text-gray-800 font-['Kanit',serif] font-light text-[20px]">
+              <li className="flex items-center text-gray-800 font-['Kanit',serif] font-light md:text-[20px]">
                 <div className="h-2 w-2 bg-blue-600 rounded-full mr-3"></div>
                 Research and Development Support
               </li>
-              <li className="flex items-center text-gray-800 font-['Kanit',serif] font-light text-[20px]">
+              <li className="flex items-center text-gray-800 font-['Kanit',serif] font-light md:text-[20px]">
                 <div className="h-2 w-2 bg-blue-600 rounded-full mr-3"></div>
                 Innovation Consulting
               </li>
-              <li className="flex items-center text-gray-800 font-['Kanit',serif] font-light text-[20px]">
+              <li className="flex items-center text-gray-800 font-['Kanit',serif] font-light md:text-[20px]">
                 <div className="h-2 w-2 bg-blue-600 rounded-full mr-3"></div>
                 Startup Mentorship Programs
               </li>
@@ -180,8 +185,8 @@ function Home() {
             <div className="w-8 h-[2px] bg-[#2c58f4]"></div>Events
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-5">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div className="md:flex md:flex-row md:items-center md:justify-start flex flex-col md:gap-5 gap-5 mt-5">
+            <div className="w-[90vw] bg-white rounded-lg shadow-lg overflow-hidden">
               <img
                 src={`https://www.ficta.co.uk/assets/img/GW2.1.png`}
                 alt="Event"
@@ -208,7 +213,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="w-[90vw] bg-white rounded-lg shadow-lg overflow-hidden">
               <img
                 src="https://libeskind.com/wp-content/uploads/elevation-from-northeast-c-bitterbredt-2280x1485.jpg"
                 alt="Event"
