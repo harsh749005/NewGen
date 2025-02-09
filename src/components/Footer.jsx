@@ -18,14 +18,14 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="flex items-center  w-96 justify-between">
+            <div className="w-72 md:w-96  flex flex-col gap-5 md:flex md:flex-row md:items-center justify-between">
               <div className="w-max">
                 <h3 className="text-xl text-white font-semibold mb-4">
                   Quick Links
                 </h3>
-                <ul className="flex flex-col items-center justify-center gap-2">
+                <ul className="flex flex-col md:flex md:flex-col md:items-center md:justify-center gap-2">
                   <li>
-                    <Link to="/" className="hover:text-white ">
+                    <Link to="/" className="hover:text-white">
                       Home
                     </Link>
                   </li>
@@ -52,10 +52,10 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="w-max ">
-                <h3 className="text-xl text-white font-semibold mb-4 w-max m-auto">
+                <h3 className="text-xl text-white font-semibold mb-4">
                   Policies
                 </h3>
-                <ul className="flex flex-col items-center justify-center gap-2">
+                <ul className="flex flex-col md:flex md:flex-col md:items-center md:justify-center gap-2">
                   <li>
                     <Link to="/refundPolicy" className="hover:text-white ">
                       Refund Policy

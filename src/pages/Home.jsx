@@ -33,11 +33,11 @@ function Home() {
       <hr className="w-[90%] m-auto mt-2 text-gray-400" />
       {/* Main Heading */}
       <div className="w-[90%] m-auto mt-20">
-        <h1 className="text-xl font-medium text-[#2c58F4] flex items-center gap-2">
+        <h1 className="text-md lg:text-xl font-medium text-[#2c58F4] flex items-center gap-2">
           <div className="w-8 h-[2px] bg-[#2c58f4]"></div>NEWGEN: IT Service
           Center
         </h1>
-        <p className='text-[76px] font-["Plus Jakarta Sans", serif] text-[#31315B] leading-tight'>
+        <p className='text-4xl lg:text-[76px] font-["Plus Jakarta Sans", serif] text-[#31315B] leading-tight'>
           Empowering <span className="font-medium">Research</span>,
           <p className="leading-tight">
             <span className="font-medium">Innovation</span>,
@@ -55,30 +55,30 @@ function Home() {
           />
         </div>
         {/* Stats Section */}
-        <div className="w-full h-[110vh] bg-blue-600">
-          <div className="bg-white py-16 w-[70%] absolute bottom-5 rounded left-[50%] translate-x-[-50%]">
+        <div className="w-full h-[180vh] md:h-[110vh] bg-blue-600">
+          <div className="bg-white py-16 w-[70%] absolute bottom-8 md:bottom-5 rounded left-[50%] translate-x-[-50%]">
             <div className="w-max m-auto px-4 sm:px-6 lg:px-8 ">
-              <div className="flex gap-36 ">
+              <div className="flex flex-col gap-5 md:flex md:flex-row md:gap-36 ">
                 <div className="text-center">
                   <Globe2 className="h-10 w-10 text-blue-600 mx-auto mb-4" />
                   <div className="flex items-center justify-center  ">
-                    <motion.div className="text-4xl font-bold text-gray-900 mb-2">
+                    <motion.div className="text-2xl lg:text-4xl font-bold text-gray-900 mb-2">
                       {rounded}
                     </motion.div>
-                    <p className="font-medium text-4xl mb-2">+</p>
+                    <p className="font-medium text-2xl lg:text-4xl lg:text-4xl mb-2">+</p>
                   </div>
                   <p className="text-gray-600">International Conferences</p>
                 </div>
                 <div className="text-center">
                   <Users className="h-10 w-10 text-blue-600 mx-auto mb-4" />
-                  <h3 className="text-4xl font-bold text-gray-900 mb-2">
+                  <h3 className="text-2xl lg:text-4xl font-bold text-gray-900 mb-2">
                     200+
                   </h3>
                   <p className="text-gray-600">Startups Mentored</p>
                 </div>
                 <div className="text-center">
                   <Calendar className="h-10 w-10 text-blue-600 mx-auto mb-4" />
-                  <h3 className="text-4xl font-bold text-gray-900 mb-2">50+</h3>
+                  <h3 className="text-2xl lg:text-4xl font-bold text-gray-900 mb-2">50+</h3>
                   <p className="text-gray-600">Annual Events</p>
                 </div>
               </div>
@@ -88,11 +88,11 @@ function Home() {
       </div>
       {/* Brief Info */}
       <div className="w-[90%] m-auto flex  mt-20">
-        <div className=" w-[800px] flex flex-col gap-10 px-20 pt-10">
+        <div className="w-[800px] flex flex-col gap-10 md:px-20 pt-10">
           <h1 className="text-xl font-['Kanit',serif] text-[#2c58F4] flex items-center gap-2">
             <div className="w-8 h-[2px] bg-[#2c58f4]"></div>Our Misson
           </h1>
-          <div className="text-4xl font-['Kanit',serif] font-light text-[#31315B]">
+          <div className="text-2xl lg:text-4xl font-['Kanit',serif] font-light text-[#31315B]">
             <span className="font-medium">Newgen Research Consultancy</span>{" "}
             empowers research and startups through mentorship, conferences, and
             strategic support.
@@ -118,7 +118,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="w-[600px] h-[700px]">
+        <div className="w-[600px] h-[700px] hidden md:block">
           <img
             className="h-full w-full object-cover"
             src="https://plus.unsplash.com/premium_photo-1664299493948-1103ac2c651d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -128,25 +128,28 @@ function Home() {
       </div>
 
       {/* About Section */}
-      <div className="w-[90%] m-auto flex  mt-20">
-        <div className="w-[600px] h-[700px]">
+      <div className="w-[90%] m-auto md:flex md:flex-row flex flex-col   mt-20 gap-5">
+      <h1 className="md:hidden flex text-xl font-['Kanit',serif] text-[#2c58F4]  items-center gap-2 ">
+            <div className="w-8 h-[2px] bg-[#2c58f4]"></div>About Us
+          </h1>
+        <div className="w-full h-[600px]">
           <img
             className="h-full w-full object-cover"
             src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="image"
           />
         </div>
-        <div className=" w-[800px] flex flex-col gap-10 px-20 pt-10">
-          <h1 className="text-xl font-['Kanit',serif] text-[#2c58F4] flex items-center gap-2">
+        <div className=" md:w-[800px] flex flex-col gap-10 md:px-20 pt-10">
+          <h1 className="hidden md:flex text-xl font-['Kanit',serif] text-[#2c58F4] items-center gap-2">
             <div className="w-8 h-[2px] bg-[#2c58f4]"></div>About Us
           </h1>
-          <div className="text-4xl font-['Kanit',serif] font-light text-[#31315B]">
+          <div className="w-72 md:w-full text-xl lg:text-4xl font-['Kanit',serif] font-light text-[#31315B]">
             Comprehensive <span className="font-medium">support</span> to
             startups and innovation{" "}
             <span className="font-medium">consulting</span>, and{" "}
             <span className="font-medium">strategic</span> guidance.
           </div>
-          <div className="flex gap-10 justify-center flex-col">
+          <div className="w-72 md:w-full flex gap-10 justify-center flex-col">
             <div className="text-[20px] font-['Kanit',serif] font-light">
               To foster innovation and growth in the technology sector by
               providing expert guidance, facilitating valuable connections, and
@@ -240,25 +243,25 @@ function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-medium mb-8 font-['Kanit',serif]">
+              <h2 className="text-2xl md:text-3xl font-medium mb-8 font-['Kanit',serif]">
                 Contact Us
               </h2>
               <div className="space-y-6">
                 <div className="flex items-center">
-                  <FaRegUser className="h-6 w-6 mr-4" />
-                  <span>Mrs Swati Wadhawan</span>
+                  <FaRegUser className="h-4 w-4 md:h-6 md:w-6 mr-4" />
+                  <span className="text-md">Mrs Swati Wadhawan</span>
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-6 w-6 mr-4" />
-                  <span>newgenresearchconsultancy@gmail.com</span>
+                  <span className="text-md">newgenresearchconsultancy@gmail.com</span>
                 </div>
                 <div className="flex items-center">
-                  <Phone className="h-6 w-6 mr-4" />
-                  <span>+1 (555) 123-4567</span>
+                  <Phone className="h-4 w-4 md:h-6 md:w-6 mr-4" />
+                  <span className="text-md">+1 (555) 123-4567</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-6 w-6 mr-4" />
-                  <span>
+                  <span className="text-md">
                     8A Adarsh Nagar, Alambagh, Lucknow-226005, U.P., India
                   </span>
                 </div>
