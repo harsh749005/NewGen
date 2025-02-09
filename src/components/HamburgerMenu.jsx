@@ -22,7 +22,7 @@ const HamburgerMenu = ({closeMenu}) => {
   return (
     <div style={{
       top: `${scrollPosition + 320}px`, // Adjust positioning based on scroll position
-    }} className='z-[11111] absolute sm:left-6 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] md:left-[25rem] md:w-96 lg:hidden bg-white  w-72  p-5  h-max  items-center flex flex-col gap-5  rounded-lg border-2 border-blue-600 '>
+    }} className='z-[11111] absolute sm:left-6 left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] md:left-[25rem] lg:hidden md:w-96  bg-white  w-72  p-5  h-max  items-center flex flex-col gap-5  rounded-lg border-2 border-blue-600 '>
     <div className=' w-full flex justify-end pr-5 p-2 mt-2'>
     <IoCloseOutline onClick={closeMenu} className='text-2xl' />
         <img  src="" alt="" className='cursor-pointer'/>
@@ -32,7 +32,7 @@ const HamburgerMenu = ({closeMenu}) => {
               <Link
                 onClick={closeMenu}              
                 to="/"
-                className="hamburgerMenua cursor-pointer text-black hover:text-blue-400"
+                className="hamburgerMenua cursor-pointer text-black hover:text-blue-500"
               >
                 Home
               </Link>
@@ -47,11 +47,11 @@ const HamburgerMenu = ({closeMenu}) => {
               </Link>
             </li>
           
-            <li  className='hamburgerMenuLi rounded  w-full  p-2 text-center hover:bg-blue-500 cursor-pointer'>
+            <li  className='hamburgerMenuLi rounded  w-full  p-2 text-center  hover:bg-blue-500 cursor-pointer'>
               <Link
                 onClick={closeMenu}
                 to="/about"
-                 className="hamburgerMenua cursor-pointer text-black hover:text-blue-400"
+                 className="hamburgerMenua cursor-pointer text-black  hover:text-blue-400"
               >
                 About
               </Link>

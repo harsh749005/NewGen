@@ -2,3 +2,6 @@
     color: white;
     cursor: pointer;
 }
+.hamburgerMenuLi:hover{
+    background-color: #2b80ff;
+}
