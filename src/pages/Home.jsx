@@ -29,7 +29,7 @@ function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <Navbar />
+      
       <hr className="w-[90%] m-auto mt-2 text-gray-400" />
       {/* Main Heading */}
       <div className="w-[90%] m-auto mt-20">

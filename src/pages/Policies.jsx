@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 const Policies = () => {
   return (
     <>
-      <Navbar />
+      
       <div className="h-100vh  w-full flex flex-col gap-5 mb-10">
         <div className="mt-5"></div>
         <div className=" pt-10 relative">

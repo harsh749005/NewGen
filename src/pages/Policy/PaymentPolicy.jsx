@@ -4,7 +4,7 @@ import Footer from "../../components/Footer";
 const PaymentPolicy = () => {
   return (
     <>
-      <Navbar />
+    
       <hr className="w-[90%] m-auto mt-2 text-gray-400" />
 
       <div className="h-100vh  w-full flex flex-col gap-5 mb-10">
