@@ -20,7 +20,7 @@ const About = () => {
           <h1 className="text-xl font-['Kanit',serif] text-[#2c58F4] flex items-center gap-2">
             <div className="w-8 h-[2px] bg-[#2c58f4]"></div>About Us
           </h1>
-          <div className="text-xl font-['Kanit',serif] font-light text-[#31315B] flex flex-col gap-5">
+          <div className="md:text-xl font-['Kanit',serif] font-light text-[#31315B] flex flex-col gap-5">
             <p>
               <span className="font-medium">Newgen Research Consultancy</span>{" "}
               is a dynamic IT consultancy firm committed to fostering{" "}
