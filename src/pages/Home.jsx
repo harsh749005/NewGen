@@ -25,6 +25,9 @@ function Home() {
       duration: 2,
     });
   }, []);
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -186,11 +189,11 @@ function Home() {
           </h1>
 
           <div className="md:flex md:flex-row md:items-center md:justify-start flex flex-col md:gap-5 gap-5 mt-5">
-            <div className="w-[90vw] bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="w-[90vw]  bg-white rounded-lg shadow-lg overflow-hidden">
               <img
-                src={`https://www.ficta.co.uk/assets/img/GW2.1.png`}
+                src="https://www.sunwayreit.com/wp-content/uploads/2022/03/SUNWAY-UNIVERSITY-COLLEGE-CAMPUS-scaled.jpg"
                 alt="Event"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 xl:h-[500px] object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -204,6 +207,7 @@ function Home() {
                   regardless of race, creed or financial standing.
                 </p>
                 <Link
+                onClick={scrollToTop}
                   to="/events"
                   className="flex items-center text-blue-600 cursor-pointer"
                 >
@@ -215,9 +219,9 @@ function Home() {
 
             <div className="w-[90vw] bg-white rounded-lg shadow-lg overflow-hidden">
               <img
-                src="https://libeskind.com/wp-content/uploads/elevation-from-northeast-c-bitterbredt-2280x1485.jpg"
+                src="https://www.londonmet.ac.uk/media/london-metropolitan-university/london-met-photos/london-met-buildingsfacilities/2017/Goulston-Street-Etrance.jpg"
                 alt="Event"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 xl:h-[500px] object-cover"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -231,6 +235,7 @@ function Home() {
                   Intelligent Computing: Theory and Applications, FICTA-2025{" "}
                 </p>
                 <Link
+                onClick={scrollToTop}
                   to="/events"
                   className="flex items-center text-blue-600 cursor-pointer"
                 >

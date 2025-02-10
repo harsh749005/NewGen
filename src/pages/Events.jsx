@@ -12,7 +12,7 @@ const Events = () => {
         <div className="w-full h-[600px] xl:w-[1800px] xl:h-[600px]">
           <img
             className="h-full w-full object-cover"
-            src="https://sunwayuniversity.edu.my/themes/custom/sunway/images/sunway-university-cover.jpg"
+            src="https://www.sunwayreit.com/wp-content/uploads/2022/03/SUNWAY-UNIVERSITY-COLLEGE-CAMPUS-scaled.jpg"
             alt="image"
           />
         </div>
@@ -146,7 +146,7 @@ const Events = () => {
         <div className="w-full h-[600px]  xl:h-[800px]">
           <img
             className="h-full w-full object-cover"
-            src="https://libeskind.com/wp-content/uploads/elevation-from-northeast-c-bitterbredt-2280x1485.jpg"
+            src="https://www.londonmet.ac.uk/media/london-metropolitan-university/london-met-photos/london-met-buildingsfacilities/2017/Goulston-Street-Etrance.jpg"
             alt="image"
           />
         </div>
