@@ -9,10 +9,10 @@ const Events = () => {
       <hr className="w-[90%] m-auto mt-2 text-gray-400" />
 
       <div className="w-[90%] m-auto xl:flex xl:flex-row flex flex-col mt-20 mb-20 gap-5">
-        <div className="w-full h-[600px] xl:w-[1800px] ">
+        <div className="w-full h-[600px] xl:w-[1800px] xl:h-[600px]">
           <img
             className="h-full w-full object-cover"
-            src="https://images.unsplash.com/photo-1634482899780-6ac6b92c656e?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://sunwayuniversity.edu.my/themes/custom/sunway/images/sunway-university-cover.jpg"
             alt="image"
           />
         </div>
@@ -20,7 +20,7 @@ const Events = () => {
           <h1 className="text-xl font-['Kanit',serif] text-[#2c58F4] flex items-center gap-2">
             <div className="w-8 h-[2px] bg-[#2c58f4]"></div>Under SCI 2025:
           </h1>
-          <div className=" lg:text-xl font-['Kanit',serif] font-light text-[#31315B] flex flex-col gap-5">
+          <div className="xl:w-[600px] lg:text-xl font-['Kanit',serif] font-light text-[#31315B] flex flex-col gap-5">
             <p>
               The 7th International Conference on Smart Computing and
               Informatics (SCI-2025) will be organized by Sunway University
@@ -54,7 +54,8 @@ const Events = () => {
               and Systems (LNNS) series, which is indexed in SCOPUS. For more
               details, visit: Springer LNNS.{" "}
               <Link
-                to="https://sunwayuniversity.edu.my/themes/custom/sunway/images/sunway-university-cover.jpg"
+                target="_blank"
+                to="https://www.springer.com/series/15179"
                 className="text-blue-500"
               >
                 futher more :
@@ -62,9 +63,12 @@ const Events = () => {
             </p>
             <p>
               Conference link :{" "}
-              <a href=" www.sciconf.co" className="text-blue-500">
+              <Link
+              
+              target="_blank"
+              to="https://sciconf.co/" className="text-blue-500">
                 Click
-              </a>
+              </Link>
             </p>
           </div>
         </div>
@@ -129,7 +133,10 @@ const Events = () => {
             </p>
             <p>
               Conference link :{" "}
-              <Link to="www.ficta.co.uk" className="text-blue-500">
+              <Link
+              rel="noopener noreferrer"  
+              target="_blank"
+              to="https://www.ficta.co.uk/" className="text-blue-500">
                 Click
               </Link>
             </p>
