@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-
+import { Link } from 'react-router-dom'
 const Events = () => {
   return (
     <>
@@ -53,12 +53,12 @@ const Events = () => {
               sessions will be published in Springer’s Lecture Notes in Networks
               and Systems (LNNS) series, which is indexed in SCOPUS. For more
               details, visit: Springer LNNS.{" "}
-              <a
-                href="https://www.springer.com/series/15179"
+              <Link
+                to="https://sunwayuniversity.edu.my/themes/custom/sunway/images/sunway-university-cover.jpg"
                 className="text-blue-500"
               >
                 futher more :
-              </a>
+              </Link>
             </p>
             <p>
               Conference link :{" "}
@@ -129,9 +129,9 @@ const Events = () => {
             </p>
             <p>
               Conference link :{" "}
-              <a href="www.ficta.co.uk" className="text-blue-500">
+              <Link to="www.ficta.co.uk" className="text-blue-500">
                 Click
-              </a>
+              </Link>
             </p>
           </div>
           
