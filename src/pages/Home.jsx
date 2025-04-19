@@ -267,7 +267,7 @@ function Home() {
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 md:h-6 md:w-6 mr-4" />
-                  <span className="text-md">+1 (555) 123-4567</span>
+                  <span className="text-md">+91 809 000 8902</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-6 w-6 mr-4" />
