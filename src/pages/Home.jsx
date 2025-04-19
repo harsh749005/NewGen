@@ -217,33 +217,6 @@ function Home() {
               </div>
             </div>
 
-            <div className="w-[90vw] bg-white rounded-lg shadow-lg overflow-hidden">
-              <img
-                src="https://www.londonmet.ac.uk/media/london-metropolitan-university/london-met-photos/london-met-buildingsfacilities/2017/Goulston-Street-Etrance.jpg"
-                alt="Event"
-                className="w-full h-48 xl:h-[500px] object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Under FICTA 2025:
-                </h3>
-                <p className="text-gray-600 mb-4 line-clamp-2">
-                  After the grand success of past twelve editions of FICTA
-                  Conference with Springer Nature as publication partner, it is
-                  a matter of pleasure and pride to announce the Thirteenth
-                  Edition of International Conference on Frontiers of
-                  Intelligent Computing: Theory and Applications, FICTA-2025{" "}
-                </p>
-                <Link
-                onClick={scrollToTop}
-                  to="/events"
-                  className="flex items-center text-blue-600 cursor-pointer"
-                >
-                  Learn more
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </div>
