@@ -1,5 +1,5 @@
-
 import Footer from "../components/Footer";
+import about from '../assets/about.avif'
 
 const About = () => {
   return (
@@ -11,7 +11,7 @@ const About = () => {
         <div className="w-full xl:w-[600px] h-[700px]">
           <img
             className="h-full w-full object-cover"
-            src="https://images.unsplash.com/photo-1634482899780-6ac6b92c656e?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={about}
             alt="image"
           />
         </div>
