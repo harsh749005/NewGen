@@ -45,9 +45,9 @@ const About = () => {
 
            
           </div>
-          <button className="bg-blue-500 px-6 py-2 w-max rounded-full text-xl font-medium text-white cursor-pointer">
+          {/* <button className="bg-blue-500 px-6 py-2 w-max rounded-full text-xl font-medium text-white cursor-pointer">
             Message
-          </button>
+          </button> */}
         </div>
       </div>
       <Footer />

@@ -1,9 +1,6 @@
-import React from "react";
-
 import { FaRegUser } from "react-icons/fa";
-import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+import { motion, useMotionValue, useTransform, animate } from "framer-motion"; //
 import {
-  BarChart3,
   Globe2,
   Users,
   Calendar,
@@ -12,11 +9,43 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
+import event1_img from "../assets/event1.jpg";
+import event2_img from "../assets/event2.jpg";
+import coverImage from "../assets/cover.avif";
+import sideImage from "../assets/img1.avif";
+import aboutUs from "../assets/aboutUs.avif";
 import { Link } from "react-router-dom";
-import Logo from "../assets/newgen.jpeg";
 import { useEffect } from "react";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+
+const eventData = [
+  {
+    title: "Under SCI 2025:",
+    image: event1_img,
+    description: `The 7th International Conference on Smart Computing and
+                  Informatics (SCI-2025) will be organized by Sunway University
+                  which is one of Malaysia’s leading private universities
+                  dedicated to providing quality holistic education for all
+                  regardless of race, creed or financial standing.`,
+
+    exploreMore: "/events/sci2025",
+  },
+  {
+    title: "Under ICDECT 2025:",
+    image: event2_img,
+    description: `The Scopus-indexed 6th International Conference on Data
+                  Engineering and Communication Technology (ICDECT-2025) returns
+                  in 2025, offering a premier platform for advanced and
+                  multi-disciplinary research. This year’s theme, “Innovation
+                  Paradigms: Knowledge, Intelligence, and Sustainability for
+                  Societal, Environmental, and Industrial Impact” invites
+                  researchers to present their work on cutting-edge solutions
+                  for real-world challenges.`,
+
+    exploreMore: "/events/icdect2025",
+  },
+];
+
 function Home() {
   const count = useMotionValue(0);
   const rounded = useTransform(count, Math.round);
@@ -24,7 +53,8 @@ function Home() {
     const animation = animate(count, 15, {
       duration: 2,
     });
-  }, []);
+    return animation.stop; // Cleanup on unmount
+  }, [count]);
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -32,7 +62,7 @@ function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      
+
       <hr className="w-[90%] m-auto mt-2 text-gray-400" />
       {/* Main Heading */}
       <div className="w-[90%] m-auto mt-20">
@@ -52,7 +82,7 @@ function Home() {
       <div className="w-full h-max  pt-32 relative mt-20">
         <div className="w-[90%] h-[600px] absolute top-0 left-[50%] translate-x-[-50%]">
           <img
-            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80"
+            src={coverImage}
             alt="banner"
             className="w-full h-full object-cover rounded"
           />
@@ -81,7 +111,9 @@ function Home() {
                 </div>
                 <div className="text-center">
                   <Calendar className="h-10 w-10 text-blue-600 mx-auto mb-4" />
-                  <h3 className="text-2xl lg:text-4xl font-bold text-gray-900 mb-2">50+</h3>
+                  <h3 className="text-2xl lg:text-4xl font-bold text-gray-900 mb-2">
+                    50+
+                  </h3>
                   <p className="text-gray-600">Annual Events</p>
                 </div>
               </div>
@@ -92,58 +124,56 @@ function Home() {
       {/* Brief Info */}
       <div className="w-[90%] m-auto xl:gap-0 flex flex-col gap-15  mt-20">
         <div className=" flex flex-col xl:flex xl:flex-row  gap-10 xl:px-20 pt-10">
-          
           <div className="xl:w-full h-[700px] hidden md:block">
-          <img
-            className="h-full w-full object-cover"
-            src="https://plus.unsplash.com/premium_photo-1664299493948-1103ac2c651d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="image"
-          />
-        </div>
+            <img
+              className="h-full w-full object-cover"
+              src={sideImage}
+              alt="image"
+            />
+          </div>
           <div className="xl:w-[800px] xl:flex xl:flex-col xl:gap-10 flex flex-col gap-10 text-2xl lg:text-4xl font-['Kanit',serif] font-light text-[#31315B]">
-          <h1 className="text-xl font-['Kanit',serif] text-[#2c58F4] flex items-center gap-2">
-            <div className="w-8 h-[2px] bg-[#2c58f4]"></div>Our Misson
-          </h1>
+            <h1 className="text-xl font-['Kanit',serif] text-[#2c58F4] flex items-center gap-2">
+              <div className="w-8 h-[2px] bg-[#2c58f4]"></div>Our Misson
+            </h1>
             <p>
-
-            <span className="font-medium">Newgen Research Consultancy</span>{" "}
-            empowers research and startups through mentorship, conferences, and
-            strategic support.
+              <span className="font-medium">Newgen Research Consultancy</span>{" "}
+              empowers research and startups through mentorship, conferences,
+              and strategic support.
             </p>
-          <div className="flex gap-10 justify-center flex-col">
-            <div className="text-[16px] md:text-[20px] font-['Kanit',serif] font-light">
-              <span className="font-medium">Newgen Research Consultancy</span> (Empowering Research, Innovation, and
-              Startups) Newgen Research Consultancy is a dynamic IT consultancy
-              firm committed to fostering research excellence, academic
-              collaboration, and startup growth. We specialize in organizing
-              international conferences, skill development workshops, and
-              mentorship programs at universities and institutions, providing
-              researchers and students with the platform to contribute to
-              intellectual capital. Beyond academia, we actively support young
-              startups, offering strategic guidance, funding, and handholding to
-              help them build a strong foundation. With a network of like-minded
-              professionals, we are dedicated to nurturing talent, fostering
-              innovation, and creating societal impact. 
-              <p className="font-medium">
-              Join us in shaping the
-              future of research and entrepreneurship!
-              </p>
+            <div className="flex gap-10 justify-center flex-col">
+              <div className="text-[16px] md:text-[20px] font-['Kanit',serif] font-light">
+                <span className="font-medium">Newgen Research Consultancy</span>{" "}
+                (Empowering Research, Innovation, and Startups) Newgen Research
+                Consultancy is a dynamic IT consultancy firm committed to
+                fostering research excellence, academic collaboration, and
+                startup growth. We specialize in organizing international
+                conferences, skill development workshops, and mentorship
+                programs at universities and institutions, providing researchers
+                and students with the platform to contribute to intellectual
+                capital. Beyond academia, we actively support young startups,
+                offering strategic guidance, funding, and handholding to help
+                them build a strong foundation. With a network of like-minded
+                professionals, we are dedicated to nurturing talent, fostering
+                innovation, and creating societal impact.
+                <p className="font-medium">
+                  Join us in shaping the future of research and
+                  entrepreneurship!
+                </p>
+              </div>
             </div>
           </div>
-          </div>
         </div>
-      
       </div>
 
       {/* About Section */}
       <div className="w-[90%] m-auto xl:flex xl:flex-row flex flex-col   mt-20 gap-5">
-      <h1 className="md:hidden flex text-xl font-['Kanit',serif] text-[#2c58F4]  items-center gap-2 ">
-            <div className="w-8 h-[2px] bg-[#2c58f4]"></div>About Us
-          </h1>
+        <h1 className="md:hidden flex text-xl font-['Kanit',serif] text-[#2c58F4]  items-center gap-2 ">
+          <div className="w-8 h-[2px] bg-[#2c58f4]"></div>About Us
+        </h1>
         <div className="w-full h-[600px] xl:w-[600px] xl:h-[800px]">
           <img
             className="h-full w-full object-cover"
-            src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={aboutUs}
             alt="image"
           />
         </div>
@@ -189,33 +219,34 @@ function Home() {
           </h1>
 
           <div className="md:flex md:flex-row md:items-center md:justify-start flex flex-col md:gap-5 gap-5 mt-5">
-            <div className="w-[90vw]  bg-white rounded-lg shadow-lg overflow-hidden">
-              <img
-                src="https://www.sunwayreit.com/wp-content/uploads/2022/03/SUNWAY-UNIVERSITY-COLLEGE-CAMPUS-scaled.jpg"
-                alt="Event"
-                className="w-full h-48 xl:h-[500px] object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Under SCI 2025:
-                </h3>
-                <p className="text-gray-600 mb-4 line-clamp-2">
-                  The 7th International Conference on Smart Computing and
-                  Informatics (SCI-2025) will be organized by Sunway University
-                  which is one of Malaysia’s leading private universities
-                  dedicated to providing quality holistic education for all
-                  regardless of race, creed or financial standing.
-                </p>
-                <Link
-                onClick={scrollToTop}
-                  to="/events"
-                  className="flex items-center text-blue-600 cursor-pointer"
-                >
-                  Learn more
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+            
+            {
+             Object.entries(eventData).map(([key,event])=>(
+                <div key={key} className="w-[90vw]  bg-white rounded-lg shadow-lg overflow-hidden">
+                <img
+                  src={event.image}
+                  alt="image"
+                  className="w-full h-48 xl:h-[500px] object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    {event.title}
+                  </h3>
+                  <p className="text-gray-600 mb-4 line-clamp-2">
+                   {event.description}
+                  </p>
+                  <Link
+                    onClick={scrollToTop}
+                    to={event.exploreMore}
+                    className="flex items-center text-blue-600 cursor-pointer"
+                  >
+                    Learn more
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </div>
               </div>
-            </div>
+              ))
+            }
 
           </div>
         </div>
@@ -236,7 +267,9 @@ function Home() {
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-6 w-6 mr-4" />
-                  <span className="text-md">newgenresearchconsultancy@gmail.com</span>
+                  <span className="text-md">
+                    newgenresearchconsultancy@gmail.com
+                  </span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 md:h-6 md:w-6 mr-4" />
