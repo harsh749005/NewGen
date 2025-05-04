@@ -64,7 +64,7 @@ const Events = () => {
         
           {Object.entries(eventData).map(([key, event]) => (
             <div key={key} className="w-[90%] m-auto xl:flex xl:flex-row flex flex-col mt-20 mb-20 gap-5">
-              <div className="w-full h-[400px] md:w-full md:h-[600px] xl:w-[1800px] xl:h-[600px]">
+              <div className="w-full h-[200px] md:w-full md:h-[500px] xl:w-[1800px] xl:h-[600px]">
                 <img
                   className="h-full w-full object-cover"
                   src={event.image}
@@ -125,7 +125,7 @@ const Events = () => {
       <hr className="w-[90%] m-auto mt-2 text-gray-400" />
 
       <div className="w-[90%] m-auto xl:flex xl:flex-row flex flex-col mt-20 mb-20 gap-5">
-        <div className="w-full h-[400px] md:w-full md:h-[600px] xl:w-[1800px] xl:h-[600px]">
+        <div className="w-full h-[200px] md:w-full md:h-[500px] xl:w-[1800px] xl:h-[600px]">
           <img
             className="h-full w-full object-cover"
             src={event.image}

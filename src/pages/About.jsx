@@ -8,7 +8,7 @@ const About = () => {
       <hr className="w-[90%] m-auto mt-2 text-gray-400" />
 
       <div className="w-[90%] m-auto xl:flex  mt-20 mb-20">
-        <div className="w-full xl:w-[600px] h-[700px]">
+        <div className="w-full h-[400px] xl:w-[600px] md:h-[700px]">
           <img
             className="h-full w-full object-cover"
             src={about}

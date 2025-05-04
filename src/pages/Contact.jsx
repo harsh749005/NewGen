@@ -1,5 +1,3 @@
-import React from "react";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const Contact = () => {
@@ -20,7 +18,7 @@ const Contact = () => {
             <div className="w-8 h-[2px] bg-[#2c58f4]"></div>Contact Us
           </h1>
           <div className="text-xl md:text-4xl font-['Kanit',serif] font-light text-[#31315B]">
-          Get in touch with us – We’d love to hear from you!"
+          Get in touch with us – We’d love to hear from you!
           
           </div>
           <div className="flex gap-10 justify-center flex-col">
