@@ -12,11 +12,14 @@ import {
 import event1_img from "../assets/event1.jpg";
 import event2_img from "../assets/event2.jpg";
 import coverImage from "../assets/cover.avif";
+import event3_img from "../assets/londonbridge.jpg";
 import sideImage from "../assets/img1.avif";
 import aboutUs from "../assets/aboutUs.avif";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Footer from "../components/Footer";
+
+// want to add more events just add data in eventData
 
 const eventData = [
   {
@@ -43,6 +46,16 @@ const eventData = [
                   for real-world challenges.`,
 
     exploreMore: "/events/icdect2025",
+  },
+  {
+    title: "Under ICMEET 2025:",
+    image: event3_img,
+    description: `The 10th ICMEET (Decennial Edition) is an international 
+    colloquium, which aims to bring together academic scientists, researchers
+     and research scholars to discuss the recent developments and future 
+     trends in the fields of microelectronics, electromagnetics and telecommunication. `,
+
+    exploreMore: "/events/icmeet2025",
   },
 ];
 
@@ -218,22 +231,26 @@ function Home() {
             <div className="w-8 h-[2px] bg-[#2c58f4]"></div>Events
           </h1>
 
-          <div className="md:flex md:flex-row md:items-center md:justify-start flex flex-col md:gap-5 gap-5 mt-5">
-            
-            {
-             Object.entries(eventData).map(([key,event])=>(
-                <div key={key} className="w-[90vw]  bg-white rounded-lg shadow-lg overflow-hidden">
+          <div className="md:flex md:flex-row md:items-center md:justify-start md:flex-wrap flex flex-col md:gap-5 gap-5 mt-5 ">
+            {Object.entries(eventData).map(([key, event]) => (
+              <div
+                key={key}
+                className="w-[300px] xl:w-[380px] bg-white rounded-lg shadow-lg overflow-hidden"
+              >
+                <div className="w-full h-[200px] xl:w-[400px] xl:h-[300px] object-cover">
+
                 <img
                   src={event.image}
                   alt="image"
-                  className="w-full h-48 xl:h-[500px] object-cover"
-                />
-                <div className="p-6">
+                  className="w-full h-full "
+                  />
+                  </div>
+                <div className="p-6 ">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
                     {event.title}
                   </h3>
                   <p className="text-gray-600 mb-4 line-clamp-2">
-                   {event.description}
+                    {event.description}
                   </p>
                   <Link
                     onClick={scrollToTop}
@@ -245,9 +262,7 @@ function Home() {
                   </Link>
                 </div>
               </div>
-              ))
-            }
-
+            ))}
           </div>
         </div>
       </div>
